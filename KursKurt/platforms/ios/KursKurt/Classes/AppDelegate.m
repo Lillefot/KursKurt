@@ -27,12 +27,29 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "UserNotifications/UserNotifications.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     self.viewController = [[MainViewController alloc] init];
+    
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    UNMutableNotificationContent *content = [UNMutableNotificationContent new];
+
+    
+    UNNotificationAction *goodAction = [UNNotificationAction actionWithIdentifier:@"Good"
+                                                                              title:@"Bra!" options:UNNotificationActionOptionNone];
+    UNNotificationAction *badAction = [UNNotificationAction actionWithIdentifier:@"Bad"
+                                                                              title:@"Dålig!" options:UNNotificationActionOptionNone];
+    UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"KurtLecture"
+                                                                              actions:@[goodAction,badAction] intentIdentifiers:@[]
+                                                                              options:UNNotificationCategoryOptionNone];
+    NSSet *categories = [NSSet setWithObject:category];
+    [center setNotificationCategories:categories];
+    content.categoryIdentifier = @"KurtLecture";
+
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 

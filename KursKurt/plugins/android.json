@@ -6,10 +6,6 @@
     "config_munge": {
         "files": {}
     },
-    "installed_plugins": {
-        "onesignal-cordova-plugin": {
-            "PACKAGE_NAME": "com.msr.kurskurt"
-        }
-    },
+    "installed_plugins": {},
     "dependent_plugins": {}
 }
