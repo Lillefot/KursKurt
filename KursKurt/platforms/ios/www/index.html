@@ -12,12 +12,12 @@
     <!---<iframe src="http://script.studieradet.se/cas/cas2.php"></iframe>--->
     <div>
       <h2>Kurskurt</h2>
-      <form method="post" action="http://script.studieradet.se/kurskurt/database.php">
+      <form id="fKurtForm" method="post" action="">
         <label>Vad tyckte du om föreläsningen "Hjärtat pumpar blod"?</label>
       </br>
-        <input type="radio" name="q1" value="1">Bra
+        <input type="radio" id="q1r1" name="q1" value="1">Bra
       </br>
-        <input type="radio" name="q1" value="0">Dålig
+        <input type="radio" id="q1r2" name="q1" value="0">Dålig
       </br>
         <input type="text" name="q1comment" value="test">
       </br>
@@ -28,7 +28,7 @@
         <input type="submit" value="Skicka in!">
       </form>
       </br>
-      <input id="clickMe" type="button" value="clickme" onclick="clicked();"/>
+      <input id="clickMe" type="button" value="clickme" onclick="submitForm();"/>
     </div>
   </body>
 </html>

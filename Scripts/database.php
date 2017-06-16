@@ -1,6 +1,6 @@
 <?php
 
-//header("Location: file:///Users/mans/Desktop/IT-bevakare/KursKurt/App/kurskurt.html");
+//header("Location: index.html");
 
 $servername = 's531.loopia.se';
 $username = 'itbev1@k172745';

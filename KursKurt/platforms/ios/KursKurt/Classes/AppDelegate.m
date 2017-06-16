@@ -34,23 +34,43 @@
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     self.viewController = [[MainViewController alloc] init];
+    //Create category for notification with action buttons
+    UNUserNotificationCenter *userNotificationCenter = [UNUserNotificationCenter currentNotificationCenter];
     
-    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
     UNMutableNotificationContent *content = [UNMutableNotificationContent new];
 
     
     UNNotificationAction *goodAction = [UNNotificationAction actionWithIdentifier:@"Good"
-                                                                              title:@"Bra!" options:UNNotificationActionOptionNone];
+                                                                              title:@"Bra!" options:UNNotificationActionOptionAuthenticationRequired];
     UNNotificationAction *badAction = [UNNotificationAction actionWithIdentifier:@"Bad"
-                                                                              title:@"Dålig!" options:UNNotificationActionOptionNone];
+                                                                              title:@"Dålig!" options:UNNotificationActionOptionAuthenticationRequired];
     UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"KurtLecture"
                                                                               actions:@[goodAction,badAction] intentIdentifiers:@[]
                                                                               options:UNNotificationCategoryOptionNone];
     NSSet *categories = [NSSet setWithObject:category];
-    [center setNotificationCategories:categories];
+    [userNotificationCenter setNotificationCategories:categories];
     content.categoryIdentifier = @"KurtLecture";
+    
+    NSLog((@"didFinishLaunchingWithOptions"));
 
+    
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
+
 }
+
+//Fungerar inte, ska låta appen sköta svar i bakgrunden
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
+    
+    //Run JavaScript
+    NSString *jsCallBack = @"submitForm()";
+    NSLog(@"jsCallBack: %@", jsCallBack);
+    
+    //Called to let your app know which action was selected by the user for a given notification.
+    NSLog((@"didReceiveNotifiacitonResponse"));
+    NSLog(@"Userinfo %@",response.notification.request.content.userInfo);
+    
+    
+}
+
 
 @end

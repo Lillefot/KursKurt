@@ -4,13 +4,14 @@
     <title>KursKurt</title>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="js/scripts.js"></script>
+    <script src="js/sendNotification.js"></script>
   </head>
 
   <body>
     <!---<iframe src="http://script.studieradet.se/cas/cas2.php"></iframe>--->
     <div>
       <h2>Kurskurt</h2>
-      <form method="post" action="http://script.studieradet.se/kurskurt/database.php">
+      <form method="post" action="http://script.studieradet.se/kurskurt/sendNotification.php">
         <label>Vad tyckte du om föreläsningen "Hjärtat pumpar blod"?</label>
       </br>
         <input type="radio" name="q1" value="1">Bra
@@ -25,6 +26,8 @@
       </br>
         <input type="submit" value="Skicka in!">
       </form>
+    </br>
+    <input id="clickMe" type="button" value="clickme" onclick="http://script.studieradet.se/kurskurt/sendNotification.php"/>
     </div>
   </body>
 </html>
