@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		L4tN+E6Fa7nEuG1fjWY71WStd6A=
+		Xc0z+KxSkOQyO8PRW15KieeH8AY=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		/OpvGIIEmRl48JXbDWaz83ub0/o=
+		MD5gglhQdK5pPlGCcOAREyuUNlY=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		4uoQ//e8IwAJmnGf5VGEWxTRQ9w=
+		97rsbc74gkmqkQItMw4q95JfKAo=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>PlugIns/OneSignalNotificationServiceExtension.appex/OneSignalNotificationServiceExtension</key>
 		<data>
-		EiAzpHvru7YW+L/dMqoES64q1KU=
+		mGQPqMYVcAXJfAgxA8ZbPR9J2wY=
 		</data>
 		<key>PlugIns/OneSignalNotificationServiceExtension.appex/_CodeSignature/CodeResources</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		E6cvBvRNAP/scqWqFK24WgHQ1AE=
+		MoHEDfRq8VLnFlisDg8H3yukLtw=
 		</data>
 		<key>www/js/scripts.js</key>
 		<data>
@@ -455,11 +455,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L4tN+E6Fa7nEuG1fjWY71WStd6A=
+			Xc0z+KxSkOQyO8PRW15KieeH8AY=
 			</data>
 			<key>hash2</key>
 			<data>
-			EAofBN6iNG9cZyq0Myt5kHRKu03ptiOJ75/nnu5R4W4=
+			Tjry2wpSV93CRRnvc3NKGg7lrK4UtuFhvB5AKnDPD1Y=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -477,11 +477,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/OpvGIIEmRl48JXbDWaz83ub0/o=
+			MD5gglhQdK5pPlGCcOAREyuUNlY=
 			</data>
 			<key>hash2</key>
 			<data>
-			PItAzSCzLNtt5wu3h2JC+JqSSowJE8ae+yeszCuH8gU=
+			e2uG8p027/JNgV4xAw8FlNkA0Jo4bgSYC4r9FMfXf/I=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -642,11 +642,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4uoQ//e8IwAJmnGf5VGEWxTRQ9w=
+			97rsbc74gkmqkQItMw4q95JfKAo=
 			</data>
 			<key>hash2</key>
 			<data>
-			mrLsvGqSdynbSZoVAUGRkZS+aeRC1CRg0Yjei8i52wg=
+			MHG7XYPM7psZwSVfupBwDbKdleMGhULtyznM6oz56io=
 			</data>
 		</dict>
 		<key>PlugIns/OneSignalNotificationServiceExtension.appex/Info.plist</key>
@@ -664,11 +664,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EiAzpHvru7YW+L/dMqoES64q1KU=
+			mGQPqMYVcAXJfAgxA8ZbPR9J2wY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qPZ+BnAU5OWNS68h2KRjrw4ySUQ67ECCBMvvv4IgpOA=
+			47LRdA3Iw4lZR/+LXgbdNvtTzOhBcseqDNqI7rjts5U=
 			</data>
 		</dict>
 		<key>PlugIns/OneSignalNotificationServiceExtension.appex/_CodeSignature/CodeResources</key>
@@ -796,11 +796,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			E6cvBvRNAP/scqWqFK24WgHQ1AE=
+			MoHEDfRq8VLnFlisDg8H3yukLtw=
 			</data>
 			<key>hash2</key>
 			<data>
-			66GQOZrmJkzEr6ljDJy7Txv+2RkOBQCFkGXkMyXG2aU=
+			66Do5URwIBf+/ihSFbzpe6hzXdMAd85FeasRMwTcfy4=
 			</data>
 		</dict>
 		<key>www/js/scripts.js</key>

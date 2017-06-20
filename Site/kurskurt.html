@@ -11,7 +11,7 @@
     <!---<iframe src="http://script.studieradet.se/cas/cas2.php"></iframe>--->
     <div>
       <h2>Kurskurt</h2>
-      <form method="post" action="http://script.studieradet.se/kurskurt/sendNotification.php">
+      <form method="post" action="http://script.studieradet.se/kurskurt/parseICS.php">
         <label>Vad tyckte du om föreläsningen "Hjärtat pumpar blod"?</label>
       </br>
         <input type="radio" name="q1" value="1">Bra
@@ -24,10 +24,12 @@
       </br>
         <input type="hidden" name="kursID" value="1">
       </br>
-        <input type="submit" value="Skicka in!">
+        <input type="submit" value="sendNotification.php">
       </form>
     </br>
-    <input id="clickMe" type="button" value="clickme" onclick="http://script.studieradet.se/kurskurt/sendNotification.php"/>
+    <input id="clickMe" type="button" value="ParseICS" onclick="parseICS();"/>
+    </br>
+    <input id="clickMe2" type="button" value="listAllEvents" onclick="listAllEvents();"/>  
     </div>
   </body>
 </html>

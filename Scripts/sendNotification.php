@@ -1,14 +1,42 @@
 <?PHP
 	function sendMessage(){
-		$content = array(
-			"en" => 'English Message'
-			);
+		//Dev
+		$date = date();
+
+    $category = 'KurtLecture';
+
+    $title = array(
+      "en" => 'Behandlades målen adekvat?'
+    );
+
+    $lecture = 'Föreläsningstitel';
+    $subtitle = array(
+      "en" => $lecture
+    );
+
+    $courseGoals = '
+    • Förstå hjärtats funktion
+    • Redogöra för hjärtats anatomi
+    • Dricka kaffe
+    • Äta macka
+    • Somna
+    • Kolla Facebook';
+
+    $content = array(
+      "en" => 'Följande kursmål ska ha tagits upp:' . $courseGoals
+      );
 
 		$fields = array(
 			'app_id' => "88aaa3f2-e759-4311-b1fd-d706b1d18335",
 			'included_segments' => array('All'),
-      'template_id' => '576a00f4-2d3b-4441-a9fb-3e4dcea9f962',
-      'send_after' => '2017-06-16 10:24:00 CEST'
+      'send_after' => $date,
+			'content_available' => true,
+      //'template_id' => '576a00f4-2d3b-4441-a9fb-3e4dcea9f962'
+      'ios_category' => $category,
+      'ios_badgeType' => 'None',
+      'headings' => $title,
+      'subtitle' => $subtitle,
+      'contents' => $content
 		);
 
 		$fields = json_encode($fields);

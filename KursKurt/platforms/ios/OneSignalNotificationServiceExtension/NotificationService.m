@@ -19,6 +19,8 @@
     
     [OneSignal didReceiveNotificationExtensionRequest:self.receivedRequest withMutableNotificationContent:self.bestAttemptContent];
     
+    NSLog(@"KUKFITTABAJS");
+    
     self.contentHandler(self.bestAttemptContent);
 }
 

@@ -28,6 +28,9 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "UserNotifications/UserNotifications.h"
+#import "OneSignal/OneSignal.h"
+#import "UIKit/UIKit.h"
+
 
 @implementation AppDelegate
 
@@ -35,20 +38,21 @@
 {
     self.viewController = [[MainViewController alloc] init];
     //Create category for notification with action buttons
-    UNUserNotificationCenter *userNotificationCenter = [UNUserNotificationCenter currentNotificationCenter];
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    center.delegate = self;
     
     UNMutableNotificationContent *content = [UNMutableNotificationContent new];
 
     
     UNNotificationAction *goodAction = [UNNotificationAction actionWithIdentifier:@"Good"
-                                                                              title:@"Bra!" options:UNNotificationActionOptionAuthenticationRequired];
+                                                                              title:@"Bra!" options:UNNotificationActionOptionNone];
     UNNotificationAction *badAction = [UNNotificationAction actionWithIdentifier:@"Bad"
-                                                                              title:@"Dålig!" options:UNNotificationActionOptionAuthenticationRequired];
+                                                                              title:@"Dålig!" options: UNNotificationActionOptionNone];
     UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"KurtLecture"
                                                                               actions:@[goodAction,badAction] intentIdentifiers:@[]
                                                                               options:UNNotificationCategoryOptionNone];
     NSSet *categories = [NSSet setWithObject:category];
-    [userNotificationCenter setNotificationCategories:categories];
+    [center setNotificationCategories:categories];
     content.categoryIdentifier = @"KurtLecture";
     
     NSLog((@"didFinishLaunchingWithOptions"));
@@ -58,9 +62,9 @@
 
 }
 
+
 //Fungerar inte, ska låta appen sköta svar i bakgrunden
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
-    
     //Run JavaScript
     NSString *jsCallBack = @"submitForm()";
     NSLog(@"jsCallBack: %@", jsCallBack);
@@ -69,8 +73,13 @@
     NSLog((@"didReceiveNotifiacitonResponse"));
     NSLog(@"Userinfo %@",response.notification.request.content.userInfo);
     
-    
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    if ([[webView stringByEvaluatingJavaScriptFromString:@"document.readyState"] isEqualToString:@"complete"]) {
+        // UIWebView object has fully loaded.
+        NSLog(@"webViewFinishedLoad");
+    }
+}
 
 @end
