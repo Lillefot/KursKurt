@@ -14,11 +14,13 @@ var parseICS = function(){
       if (xhr.readyState === 4 && xhr.status === 200) {
           eventList = JSON.parse(xhr.responseText);
           console.log("JSON responseText: " + eventList);
+          document.getElementById('icsArray').value = eventList;
       }
   };
   xhr.send();
 }
 var listAllEvents = function () {
+  console.log('icsArray: ' + document.getElementById('icsArray').value);
   for (var i in eventList) {
     console.log(eventList[i].title + " " + eventList[i].endTime);
   }

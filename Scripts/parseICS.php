@@ -7,16 +7,18 @@ define('DATE_TIME_FORMAT', 'Y-m-d H:i:s T');
 
 use ICal\ICal;
 
+// TODO: Make it possible to use webcal(in http-format) link to ics file instead of local file
+$userCalendar = 'KursKurt.ics';
 try {
-    $ical = new ICal('KursKurt.ics', array(
+    $ical = new ICal($userCalendar, array(
         'defaultSpan'           => 2,     // Default value
         'defaultTimeZone'       => 'UTC',
         'defaultWeekStart'      => 'MO',  // Default value
         'skipRecurrence'        => false, // Default value
         'useTimeZoneWithRRules' => false, // Default value
     ));
-    // $ical->initFile('ICal.ics');
-    // $ical->initUrl('https://raw.githubusercontent.com/u01jmg3/ics-parser/master/examples/ICal.ics');
+    //$ical->initFile('ICal.ics');
+    //$ical->initUrl('https://raw.githubusercontent.com/u01jmg3/ics-parser/master/examples/ICal.ics');
 } catch (\Exception $e) {
     die($e);
 }
