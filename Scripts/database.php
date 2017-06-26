@@ -2,10 +2,7 @@
 
 //header("Location: index.html");
 
-$servername = 's531.loopia.se';
-$username = 'itbev1@k172745';
-$password = 'easypass';
-$db = 'kurskurt_se';
+require_once 'databaseCredentials.php';
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $db);
@@ -16,30 +13,44 @@ if ($conn->connect_error) {
 }
 echo 'Connected successfully' . '<br>';
 
-//Form variables
-$user = mysqli_real_escape_string($conn, $_REQUEST['user']);
-$kursID = mysqli_real_escape_string($conn, $_REQUEST['kursID']);
-$bra = mysqli_real_escape_string($conn, $_REQUEST['q1']);
-$kommentar = mysqli_real_escape_string($conn, $_REQUEST['q1comment']);
+//Set character set to allow ÅÄÖ
+printf("Initial character set: %s\n", mysqli_character_set_name($conn) . '<br>');
+if (!mysqli_set_charset($conn, "utf8")) {
+    printf("Error loading character set utf8: %s\n", mysqli_error($conn) . '<br>');
+    exit();
+} else {
+    printf("Current character set: %s\n", mysqli_character_set_name($conn) . '<br>');
+}
 
-//Select and echo table
-/*
-$sql = 'SELECT * FROM Kurser';
+//Get form variables
+$user = mysqli_real_escape_string($conn, $_REQUEST['user']);
+$courseID = mysqli_real_escape_string($conn, $_REQUEST['courseID']);
+$courseTable = null;
+$lectureName = mysqli_real_escape_string($conn, $_REQUEST['lectureName']);
+$lectureID = null;
+$goodBad = mysqli_real_escape_string($conn, $_REQUEST['q1']);
+$comment = mysqli_real_escape_string($conn, $_REQUEST['q1comment']);
+
+//Select and set chosen lectures lectureID
+$sql = "SELECT LectureID FROM Lectures WHERE LectureName = '$lectureName'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while ($row = $result->fetch_assoc()){
-    echo $row['KursID'] . ' ' . $row['Kurs'] . ' ' . $row['Termin'] . '<br>';
+    $lectureID = $row['LectureID'];
+    echo ' Lecture ID = ' . $lectureID . '<br>';
   }
 }
 else {
-  echo 'Error: Select FROM Kurser';
+  echo 'Error: Select FROM Lectures' . $conn->error;
 }
-*/
+
 
 //Insert from form to table
-$sql = "INSERT INTO ResultatKursID1 (KursID, Bra, Kommentar, User)
-VALUES ('$kursID', '$bra', '$kommentar', '$user')";
+$courseTable = 'ResultsCourseID' . $lectureID;
+echo 'CourseTable = ' . $courseTable . '<br>';
+$sql = "INSERT INTO ResultsCourseID1 (CourseID, LectureName, LectureID, GoodBad, Comment, User)
+VALUES ('$courseID', '$lectureName', '$lectureID', '$goodBad', '$comment', '$user')";
 $result = $conn->query($sql);
 
 if ($result === TRUE){
