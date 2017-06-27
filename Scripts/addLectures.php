@@ -4,13 +4,14 @@
 require_once 'databaseCredentials.php';
 include 'parseICS.php';
 
+//Grab event names and end times from parseICS.php
 $GLOBALS['globalEventTimeAndTitle'] = $eventTimeAndTitle;
 
-// Create connection
+// Create connection to database
 $conn = new mysqli($servername, $username, $password, $db);
 $GLOBALS['conn'] = $conn;
 
-// Check connection
+// Check connection with database
 if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 }
@@ -26,12 +27,16 @@ if (!mysqli_set_charset($conn, "utf8")) {
 }
 
 //Get form variables
+//Get user set CourseID
 $GLOBALS['globalCourseID'] = mysqli_real_escape_string($conn, $_REQUEST['courseID']);
 
+//Add lecture to Lecture table together with user set Course ID.
+//Database will assign unique Lecture ID
 function addLecture(){
   $lectureName = $GLOBALS['globalLecture'];
   $courseID = $GLOBALS['globalCourseID'];
-
+  //Don't insert into table if an entry with the same LectureName and CourseID already exists
+  //Lectures with the same name but another Course ID will still be added
   $sql = "INSERT IGNORE INTO Lectures (CourseID, LectureName)
   VALUES ('$courseID', '$lectureName')";
   $result = $GLOBALS['conn']->query($sql);
@@ -44,10 +49,10 @@ function addLecture(){
   }
 }
 
+//Loop through the whole list of events from parseICS.php
 foreach ($GLOBALS['globalEventTimeAndTitle'] as $event) :
   echo 'addEvent' . $event['title'] . '<br>';
   $GLOBALS['globalLecture'] = $event['title'];
-  echo 'Debug' . '<br>';
   addLecture();
 endforeach;
 

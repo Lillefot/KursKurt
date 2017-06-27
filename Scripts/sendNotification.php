@@ -1,24 +1,32 @@
 <?PHP
 	include 'parseICS.php';
+// Grab list of event and their end times from parseICS.php
 	$GLOBALS['globalEventTimeAndTitle'] = $eventTimeAndTitle;
 
+// Send notification request to OneSignal
 		function sendMessage(){
 			print_r($GLOBALS['globalLecture']);
 			print_r($GLOBALS['globalEventEndTime']);
+
+			//Set date of delivery for notification to end time of lecture
 			$date = $GLOBALS['globalEventEndTime'];
 			$scheduledDelivery = $date;
 
+			//Set category for use of action buttons connected to said category
 	    $category = 'KurtLecture';
 
+			//Set title of notification
 	    $title = array(
 	      "en" => 'Behandlades målen adekvat?'
 	    );
 
+			//Set subtitle of notification to name of lecture
 	    $lecture = $GLOBALS['globalLecture'];
 	    $subtitle = array(
 	      "en" => $lecture
 	    );
 
+			//Set content of notification to course goals set by lecturer
 	    $courseGoals = '
 	    • Förstå hjärtats funktion
 	    • Redogöra för hjärtats anatomi
@@ -31,6 +39,7 @@
 	      "en" => 'Följande kursmål ska ha tagits upp:' . $courseGoals
 	      );
 
+			//Array to be sent to OneSingal
 			$fields = array(
 				'app_id' => "88aaa3f2-e759-4311-b1fd-d706b1d18335",
 				'included_segments' => array('All'),
@@ -44,6 +53,7 @@
 	      'contents' => $content
 			);
 
+			//Send notification request to OneSignal
 			$fields = json_encode($fields);
 	    print("\nJSON sent:\n");
 	    print($fields);
@@ -51,7 +61,7 @@
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
 			curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json; charset=utf-8',
-													   'Authorization: Basic OTViNGEyM2ItNWRkMC00MmMzLTk2OWMtNzFmZjc1ODgwYmY5'));
+													   'Authorization: Basic OTViNGEyM2ItNWRkMC00MmMzLTk2OWMtNzFmZjc1ODgwYmY5')); //Set to App-key from OneSignal
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 			curl_setopt($ch, CURLOPT_HEADER, FALSE);
 			curl_setopt($ch, CURLOPT_POST, TRUE);
@@ -64,6 +74,8 @@
 			return $response;
 
 		}
+
+//Create one notification for each event in list generated from parseICS.php
 	foreach ($GLOBALS['globalEventTimeAndTitle'] as $event) :
 		$GLOBALS['globalLecture'] = $event['title'];
 		$GLOBALS['globalEventEndTime'] = $event['endTime'];

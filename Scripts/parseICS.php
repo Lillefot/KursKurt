@@ -1,13 +1,18 @@
 <?php
 include 'ICal.php';
 include 'Event.php';
+
+//Required to accept AJAX-request
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+
+//Set to match date format required by OneSignal
 define('DATE_TIME_FORMAT', 'Y-m-d H:i:s T');
 
 use ICal\ICal;
 
 // TODO: Make it possible to use webcal(in http-format) link to ics file instead of local file
+// Setup calendar object from .ics file
 $userCalendar = 'KursKurt.ics';
 try {
     $ical = new ICal($userCalendar, array(
@@ -27,6 +32,7 @@ $forceTimeZone = false;
 
 //All events in file
 $events = $ical->events();
+
 //Get all end times and titles
 $eventEndTimes = [];
 $eventTitles = [];
@@ -37,9 +43,12 @@ foreach ($events as $event) :
   $eventTitles[] = $event->summary;
 endforeach;
 
+//Create array where titles and end times are paired together
 foreach (array_combine($eventTitles, $eventEndTimes) as $title => $endTime){
   $eventTimeAndTitle[] = array('title' => $title, 'endTime' => $endTime);
 }
+
+//Encode to json for javascript to pick up via AJAX-request
 echo json_encode($eventTimeAndTitle);
 
 

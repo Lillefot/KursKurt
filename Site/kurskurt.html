@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <!---<iframe src="http://script.studieradet.se/cas/cas2.php"></iframe>--->
+    <iframe src="http://script.studieradet.se/cas/cas2.php"></iframe>
     <div>
       <h2>Kurskurt</h2>
         <form id="fKurtForm" method="post" action="">
@@ -21,7 +21,7 @@
           <input type="text" id="q1comment" name="q1comment" value="test">
         </br>
           <label for="user">Användare</label>
-          <input type="text" id="user" name="user" value="masa7027">
+          <input type="text" id="user" name="user" value="">
         </br>
           <label for="semester">Termin</label>
           <input type="text" id="semester" name="semester" value="1">
@@ -29,6 +29,9 @@
           <label for="lectureID">Föreläsingsnamn</label>
           <input type="text" id="lectureName" name="lectureName" value="Föreläsning 1">
         </br>
+        <label for="courseID">KursID</label>
+        <input type="text" id="courseID" name="courseID" value="3">
+      </br>
         </form>
         <input type="button" value="submitForm()" onclick="submitForm();">
 
@@ -50,6 +53,13 @@
 
         </br>
 
+        <form method="post" action="http://script.studieradet.se/kurskurt/formFromDB.php">
+          <label for="courseID">formFromDB</label>
+        </br>
+          <input type="submit" value="formFromDB.php">
+        </form>
+
+        </br>
           <input id="clickMe" type="button" value="ParseICS" onclick="parseICS();"/>
         </br>
           <input id="clickMe2" type="button" value="listAllEvents" onclick="listAllEvents();"/>

@@ -2,6 +2,7 @@
 
 //header("Location: index.html");
 
+//Get login credentials
 require_once 'databaseCredentials.php';
 
 // Create connection
@@ -23,7 +24,7 @@ if (!mysqli_set_charset($conn, "utf8")) {
 }
 
 //Get form variables
-$user = mysqli_real_escape_string($conn, $_REQUEST['user']);
+$user = sha1(mysqli_real_escape_string($conn, $_REQUEST['user']));
 $courseID = mysqli_real_escape_string($conn, $_REQUEST['courseID']);
 $courseTable = null;
 $lectureName = mysqli_real_escape_string($conn, $_REQUEST['lectureName']);
@@ -31,8 +32,8 @@ $lectureID = null;
 $goodBad = mysqli_real_escape_string($conn, $_REQUEST['q1']);
 $comment = mysqli_real_escape_string($conn, $_REQUEST['q1comment']);
 
-//Select and set chosen lectures lectureID
-$sql = "SELECT LectureID FROM Lectures WHERE LectureName = '$lectureName'";
+//Select and set chosen lecture's lectureID if it matches the courseID set by user
+$sql = "SELECT LectureID FROM Lectures WHERE LectureName = '$lectureName' AND CourseID = '$courseID'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -46,10 +47,10 @@ else {
 }
 
 
-//Insert from form to table
-$courseTable = 'ResultsCourseID' . $lectureID;
+//Insert form data to table if LectureID doesn't already have an entry from the same user
+$courseTable = 'ResultsCourseID' . $courseID;
 echo 'CourseTable = ' . $courseTable . '<br>';
-$sql = "INSERT INTO ResultsCourseID1 (CourseID, LectureName, LectureID, GoodBad, Comment, User)
+$sql = "INSERT INTO $courseTable (CourseID, LectureName, LectureID, GoodBad, Comment, User)
 VALUES ('$courseID', '$lectureName', '$lectureID', '$goodBad', '$comment', '$user')";
 $result = $conn->query($sql);
 
