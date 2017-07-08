@@ -22,6 +22,7 @@
 		31B5CC951EF1446400C36B34 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B5CC941EF1446400C36B34 /* OneSignal.framework */; };
 		31B5CC971EF146A400C36B34 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B5CC961EF146A400C36B34 /* UserNotifications.framework */; };
 		31B5CCA81EF166E000C36B34 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B5CC961EF146A400C36B34 /* UserNotifications.framework */; };
+		31D1725D1F03E32500276FA3 /* CallbackPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D1725C1F03E32500276FA3 /* CallbackPlugin.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		A69C9293E59B43DE8353302D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455050D59EDF4557A7DB0794 /* SystemConfiguration.framework */; };
 		E641E319259EDD6F1F06FCC1 /* libPods-KursKurt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8ABE28707BD4D024B81494F /* libPods-KursKurt.a */; };
@@ -88,6 +89,8 @@
 		31B5CC921EF1445800C36B34 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		31B5CC941EF1446400C36B34 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
 		31B5CC961EF146A400C36B34 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		31D1725B1F03E32500276FA3 /* CallbackPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackPlugin.h; sourceTree = "<group>"; };
+		31D1725C1F03E32500276FA3 /* CallbackPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallbackPlugin.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* KursKurt-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KursKurt-Prefix.pch"; sourceTree = "<group>"; };
 		338C0B1B54BBD9797984D825 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		455050D59EDF4557A7DB0794 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				31D1725B1F03E32500276FA3 /* CallbackPlugin.h */,
+				31D1725C1F03E32500276FA3 /* CallbackPlugin.m */,
 				302D95EF14D2391D003F00A1 /* MainViewController.m */,
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
@@ -488,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				31D1725D1F03E32500276FA3 /* CallbackPlugin.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				1058C3FBABAC452C83EED212 /* OneSignalPush.m in Sources */,

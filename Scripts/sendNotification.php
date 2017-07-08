@@ -10,7 +10,9 @@
 
 			//Set date of delivery for notification to end time of lecture
 			$date = $GLOBALS['globalEventEndTime'];
-			$scheduledDelivery = $date;
+			//TODO: Set to current date/time for developments purposes
+			// $scheduledDelivery = $date;
+			$scheduledDelivery = date();
 
 			//Set category for use of action buttons connected to said category
 	    $category = 'KurtLecture';
