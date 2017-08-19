@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		iOkNIPOERLTqSCkdGZJjaBeP+10=
+		2fkwreUt2ZiAM0+jLd4ix0bkhuE=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		fGk/YX3ZYhFpMcgzDVe8DVzf4VY=
+		i626zsydQ1qqInLNet5SVAlYqYg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Oxr25s13X2Q3CemtqyaqEhjWZIg=
+		p1LW0ofM4WVtjFzB/KSEQgjReXw=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -158,11 +158,31 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		OBYGJba/vi4R0LwOlmtwHZFQpt0=
+		Ow7i4MssW+mfRTNMVJApyOiIzYg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/Info.plist</key>
+		<data>
+		i+On04fOiGM0ifPT03pg1yqWYZ4=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/OneSignalNotificationServiceExtension</key>
+		<data>
+		AFFRgX535ItQ1fzBNdtw/DKPhtw=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/_CodeSignature/CodeResources</key>
+		<data>
+		z8BlVYjfwop+FErhZD2LE0tOrGg=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/archived-expanded-entitlements.xcent</key>
+		<data>
+		uVC4UsEAjsaAorNMAW+mHUKgk9o=
+		</data>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/embedded.mobileprovision</key>
+		<data>
+		5clQq7fK/MJisnCzmlZ/ItwXtko=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -198,11 +218,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		1Cdpat0X2sXmjGxgkvVbK7BuOa8=
+		W1XXagDU9fQHXiJIdaplJ81GgXw=
 		</data>
 		<key>www/js/scripts.js</key>
 		<data>
-		Jh8Qsrk54jndKIrfKmYzes9M69g=
+		BFzH3iHKnlou6qtKmVlAT9zzNHQ=
 		</data>
 		<key>www/plugins/onesignal-cordova-plugin/www/OneSignal.js</key>
 		<data>
@@ -435,11 +455,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iOkNIPOERLTqSCkdGZJjaBeP+10=
+			2fkwreUt2ZiAM0+jLd4ix0bkhuE=
 			</data>
 			<key>hash2</key>
 			<data>
-			PJ5marQ4oMKJL+t5Ea+2ELV3kA5/SQXHASXzDeSCckw=
+			4SOdrEqLQXRYz2WClGo0JhXLGzcM7qO95qxrAFthBNU=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -457,11 +477,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fGk/YX3ZYhFpMcgzDVe8DVzf4VY=
+			i626zsydQ1qqInLNet5SVAlYqYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ThENy0minpMhEMYLsUpKeCSx9SvpzX/pckJBWNLggZ8=
+			I2YjPNT26Wufew2pVUtVZ6itqDlvPlbZ5+iGphdJXtw=
 			</data>
 		</dict>
 		<key>LaunchImage-568h@2x.png</key>
@@ -622,11 +642,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OBYGJba/vi4R0LwOlmtwHZFQpt0=
+			Ow7i4MssW+mfRTNMVJApyOiIzYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			dEqMr+r9YEfIChTELxidy8dg7f3MmfwZn8iM5/v6PTI=
+			7GNLBSdq78RbjWI6Tov+4+Di8SKgthzoso9d6pXh4FQ=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i+On04fOiGM0ifPT03pg1yqWYZ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			TJ6bwbaUX5gKgSEP7iy5GtXBEvAJRfHNQ1fEXEyf2Og=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/OneSignalNotificationServiceExtension</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AFFRgX535ItQ1fzBNdtw/DKPhtw=
+			</data>
+			<key>hash2</key>
+			<data>
+			6NnklK8fZtGPzdRsynKfJH6zTx2HuZysYlfaE1WnP+g=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			z8BlVYjfwop+FErhZD2LE0tOrGg=
+			</data>
+			<key>hash2</key>
+			<data>
+			nSYdBoG/PzI8gP+7XApnsUXzrMR6IUoc+XChzd5iJMk=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/archived-expanded-entitlements.xcent</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uVC4UsEAjsaAorNMAW+mHUKgk9o=
+			</data>
+			<key>hash2</key>
+			<data>
+			e/joE7ObU4L5jO1+1JUxZxM/FUkgLPoVg6yex5UVEFk=
+			</data>
+		</dict>
+		<key>PlugIns/OneSignalNotificationServiceExtension.appex/embedded.mobileprovision</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5clQq7fK/MJisnCzmlZ/ItwXtko=
+			</data>
+			<key>hash2</key>
+			<data>
+			IYKcdinlPlIZ9ZDepFmQYNufIIPsC3QmNXmh6wGl2iM=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -721,22 +796,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Cdpat0X2sXmjGxgkvVbK7BuOa8=
+			W1XXagDU9fQHXiJIdaplJ81GgXw=
 			</data>
 			<key>hash2</key>
 			<data>
-			VwYcE0tZoXq8tHtqGTcX3cw5nHNs92VU+30bUB3MTAY=
+			IMS/KkDx04KGl+w+0mKfGrD+wiSA6aYX5fYc61P9U74=
 			</data>
 		</dict>
 		<key>www/js/scripts.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jh8Qsrk54jndKIrfKmYzes9M69g=
+			BFzH3iHKnlou6qtKmVlAT9zzNHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			c2sirTXEB7TKTErj4zOPQ4lYk2rFFiuo9FY94zl3Tx0=
+			M82nXRw01wApc6x1QkgRjGwuZeE+TRwuOeJw8YFsJSM=
 			</data>
 		</dict>
 		<key>www/plugins/onesignal-cordova-plugin/www/OneSignal.js</key>

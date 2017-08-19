@@ -2,11 +2,13 @@
   <head>
     <meta charset="UTF-8">
     <title>KursKurt</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <script src="cordova.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+
   </head>
 
-  <body>
+  <body onLoad="onLoad();">
     <!---<iframe src="http://script.studieradet.se/cas/cas2.php"></iframe>--->
     <div>
       <h2>Kurskurt</h2>
@@ -25,6 +27,8 @@
       </br>
         <input type="submit" value="Skicka in!">
       </form>
+      </br>
+      <input id="clickMe" type="button" value="clickme" onclick="clicked();"/>
     </div>
   </body>
 </html>

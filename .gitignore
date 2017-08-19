@@ -5,6 +5,9 @@
 # Certificates
 Certifikat/
 
+# Database Credentials
+Scripts/databaseCredentials.php
+
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
 
