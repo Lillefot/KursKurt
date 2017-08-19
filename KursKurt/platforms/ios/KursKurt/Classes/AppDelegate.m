@@ -36,4 +36,47 @@
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
+<<<<<<< HEAD
+=======
+//Lets the app run JS in the background on notification response
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
+    
+    UIWebView * webView = (UIWebView *) self.viewController.webView;
+    
+    NSString *jsSetLectureName = @"setLectureName('');";
+    NSString *subtitle = response.notification.request.content.subtitle;
+    NSMutableString *jsSetLectureNameWithSubtitle = [NSMutableString stringWithString:jsSetLectureName];
+    [jsSetLectureNameWithSubtitle insertString:subtitle atIndex:16];
+    NSLog(@"%@", jsSetLectureNameWithSubtitle);
+    [webView stringByEvaluatingJavaScriptFromString:jsSetLectureNameWithSubtitle];
+    
+    NSString *jsFunction = @"submitFormFromLockScreen('');";
+    NSString *userChoice = response.actionIdentifier;
+    NSMutableString *jsFunctionWithChoice = [NSMutableString stringWithString:jsFunction];
+    [jsFunctionWithChoice insertString:userChoice atIndex:26];
+    NSLog(@"%@", jsFunctionWithChoice);
+    
+    
+    [webView stringByEvaluatingJavaScriptFromString:jsFunctionWithChoice];
+    
+    //Called to let your app know which action was selected by the user for a given notification.
+    NSLog((@"didReceiveNotifiacitonResponse"));
+    NSLog(@"ActionButtonPressed %@",response.actionIdentifier);
+    NSLog(@"Subtitle %@", response.notification.request.content.subtitle);
+    completionHandler();
+}
+
+// Should wake app after reboot of system but doesn't in iOS10, seems to work in iOS9
+//- (void)application:(UIApplication *)application
+//didReceiveRemoteNotification:(NSDictionary *)userInfo
+//fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler{
+    //NSLog(@"fetchCompletionHandler");
+    //UIWebView * webView = (UIWebView *) self.viewController.webView;
+    
+    //[webView stringByEvaluatingJavaScriptFromString:@"submitForm();"];
+    //completionHandler(UIBackgroundFetchResultNewData);
+//}
+
+
+>>>>>>> 2-Action-Push-notifications
 @end

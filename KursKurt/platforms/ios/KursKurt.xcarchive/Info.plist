@@ -18,7 +18,11 @@
 	<key>ArchiveVersion</key>
 	<integer>2</integer>
 	<key>CreationDate</key>
+<<<<<<< HEAD
 	<date>2017-06-12T15:53:11Z</date>
+=======
+	<date>2017-07-25T14:17:28Z</date>
+>>>>>>> 2-Action-Push-notifications
 	<key>Name</key>
 	<string>KursKurt</string>
 	<key>SchemeName</key>

@@ -30,19 +30,9 @@
     <true/>
     <key>NSAppTransportSecurity</key>
     <dict>
-      <key>NSExceptionDomains</key>
-      <dict>
-        <key>script.studieradet.se</key>
-        <dict>
-          <key>NSExceptionAllowsInsecureHTTPLoads</key>
-          <true/>
-        </dict>
-      </dict>
       <key>NSAllowsArbitraryLoads</key>
       <true/>
     </dict>
-    <key>NSMainNibFile</key>
-    <string/>
     <key>NSMainNibFile~ipad</key>
     <string/>
     <key>UIBackgroundModes</key>
@@ -51,6 +41,8 @@
     </array>
     <key>UIRequiresFullScreen</key>
     <true/>
+    <key>UIStatusBarHidden</key>
+    <false/>
     <key>UISupportedInterfaceOrientations</key>
     <array>
       <string>UIInterfaceOrientationPortrait</string>
