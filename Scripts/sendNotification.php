@@ -41,10 +41,20 @@
 	      "en" => 'Följande kursmål ska ha tagits upp:' . $courseGoals
 	      );
 
+			//Makes sure notifications are only sent to users who have chosen the same course as set when scheduling notifications
+			$courseID = $_GET['courseID'];
+			$filters = array(
+				"field" => "tag",
+				"key" => 'courseID',
+				"relation" => '=',
+				"value" => $courseID
+			);
+
 			//Array to be sent to OneSingal
 			$fields = array(
 				'app_id' => "88aaa3f2-e759-4311-b1fd-d706b1d18335",
 				'included_segments' => array('All'),
+				'filters' => array($filters),
 	      'send_after' => $scheduledDelivery,
 				'content_available' => true,
 	      //'template_id' => '576a00f4-2d3b-4441-a9fb-3e4dcea9f962'

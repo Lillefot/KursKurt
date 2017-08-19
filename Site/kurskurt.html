@@ -3,6 +3,11 @@
     <meta charset="UTF-8">
     <title>KursKurt</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel ="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/rainbowvis.js"></script>
     <script src="js/scripts.js"></script>
   </head>
 
@@ -30,7 +35,7 @@
           <input type="text" id="lectureName" name="lectureName" value="Föreläsning 1">
         </br>
         <label for="courseID">KursID</label>
-        <input type="text" id="courseID" name="courseID" value="3">
+        <input type="text" id="courseID" name="courseID" value="4">
       </br>
         </form>
         <input type="button" value="submitForm()" onclick="submitForm();">
@@ -46,7 +51,7 @@
 
         <form method="post" action="http://script.studieradet.se/kurskurt/addLectures.php">
           <label for="courseID">KursID</label>
-          <input type="text" id="courseID" name="courseID" value="3">
+          <input type="text" id="courseID" name="courseID" value="4">
         </br>
           <input type="submit" value="addLectures.php">
         </form>
@@ -60,9 +65,11 @@
         </form>
 
         </br>
-          <input id="clickMe" type="button" value="ParseICS" onclick="parseICS();"/>
+          <input id="clickMe" type="button" value="haveAnswered" onclick="haveAnswered();"/>
+
         </br>
-          <input id="clickMe2" type="button" value="listAllEvents" onclick="listAllEvents();"/>
+        <table id=resultsTable data-role="table" class="ui-responsive">
+        </table>
     </div>
   </body>
 </html>
