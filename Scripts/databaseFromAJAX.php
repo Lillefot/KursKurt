@@ -12,15 +12,15 @@ $conn = new mysqli($servername, $username, $password, $db);
 if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 }
-echo 'Connected successfully' . '<br>';
+//echo 'Connected successfully' . '<br>';
 
 //Set character set to allow ÅÄÖ
-printf("Initial character set: %s\n", mysqli_character_set_name($conn) . '<br>');
+//printf("Initial character set: %s\n", mysqli_character_set_name($conn) . '<br>');
 if (!mysqli_set_charset($conn, "utf8")) {
-    printf("Error loading character set utf8: %s\n", mysqli_error($conn) . '<br>');
+    //printf("Error loading character set utf8: %s\n", mysqli_error($conn) . '<br>');
     exit();
 } else {
-    printf("Current character set: %s\n", mysqli_character_set_name($conn) . '<br>');
+    //printf("Current character set: %s\n", mysqli_character_set_name($conn) . '<br>');
 }
 
 //Get form variables
@@ -56,7 +56,7 @@ VALUES ('$courseID', '$lectureName', '$lectureID', '$goodBad', '$comment', '$use
 $result = $conn->query($sql);
 
 if ($result === TRUE){
-  echo 'Record added' . '<br>';
+  echo 'Success! Record added' . '<br>';
 }
 else {
   echo 'Could not add record:' . ' ' . $conn->error . '<br>';

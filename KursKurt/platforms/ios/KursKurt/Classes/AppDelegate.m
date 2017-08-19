@@ -74,10 +74,10 @@
     NSLog(@"%@", jsSetLectureNameWithSubtitle);
     [webView stringByEvaluatingJavaScriptFromString:jsSetLectureNameWithSubtitle];
     
-    NSString *jsFunction = @"submitForm('');";
+    NSString *jsFunction = @"submitFormFromLockScreen('');";
     NSString *userChoice = response.actionIdentifier;
     NSMutableString *jsFunctionWithChoice = [NSMutableString stringWithString:jsFunction];
-    [jsFunctionWithChoice insertString:userChoice atIndex:12];
+    [jsFunctionWithChoice insertString:userChoice atIndex:26];
     NSLog(@"%@", jsFunctionWithChoice);
     
     

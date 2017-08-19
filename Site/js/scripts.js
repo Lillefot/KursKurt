@@ -1,3 +1,12 @@
+String.prototype.insertAt=function(index, string) {
+  return this.substr(0, index) + string + this.substr(index);
+}
+
+// class lecture {
+//   constructor(lectureID, lectureGoodBad)
+//     this.ID = lectureID;
+//     this.goodBad = lectureGoodBad;
+// }
 
 window.onload = function(){
   console.log('Window loaded');
@@ -15,6 +24,12 @@ window.onload = function(){
   document.getElementById('user').value = user;
   console.log('User = ' + document.getElementById('user').value);
   },false);
+  getCount();
+
+  $(document).on("click", "#resultsTable tbody tr", function() {
+        var lectureName = $(this).children('.nameCell').text();
+        console.log(lectureName);
+    });
 }
 
 // Clear eventList
@@ -72,4 +87,118 @@ function submitForm() {
   else {
     alert('Fyll i om bra eller dålig!');
   }
+}
+
+//List results from corresponding course
+function getResults() {
+  var choice = document.getElementById('courseID').value;
+  var xhr = new XMLHttpRequest();
+  var url = "http://script.studieradet.se/kurskurt/listResults.php";
+  var url = url + "?courseChoice=" + choice;
+  xhr.onreadystatechange = function () {
+      //Run on success
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.warn(xhr.responseText);
+          allResultsArray = JSON.parse(xhr.responseText);
+          console.log(allResultsArray);
+      }
+  };
+  xhr.open("GET", url, true);
+  xhr.send(null);
+}
+
+function haveAnswered() {
+  var choice = document.getElementById('courseID').value;
+  var user = document.getElementById('user').value;
+  var xhr = new XMLHttpRequest();
+  var url = "http://script.studieradet.se/kurskurt/haveAnswered.php";
+  var url = url + "?courseChoice=" + choice + "&user=" + user;
+  xhr.onreadystatechange = function () {
+      //Run on success
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.warn(xhr.responseText);
+          haveAnsweredArray = JSON.parse(xhr.responseText);
+          console.log(haveAnsweredArray);
+          markAnswered();
+      }
+  };
+  xhr.open("GET", url, true);
+  xhr.send(null);
+}
+
+function markAnswered() {
+  _.each(haveAnsweredArray, function(entry){
+    var rowID = "#rowLectureID" + entry.lectureID;
+    if (entry.comment) {
+      $(rowID).children('.answeredCell')
+        .css('background-color', '#5bff4c')
+        .empty()
+        .append('Kommenterat');
+    }
+    else {
+      $(rowID).children('.answeredCell')
+        .css('background-color', '#fffdaa')
+        .empty()
+        .append('Fyllt i Bra/Dålig');
+    }
+  });
+}
+
+function getCount() {
+  var choice = document.getElementById('courseID').value;
+  var xhr = new XMLHttpRequest();
+  var url = "http://script.studieradet.se/kurskurt/countEntries.php";
+  var url = url + "?courseChoice=" + choice;
+  xhr.onreadystatechange = function () {
+      //Run on success
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          console.warn(xhr.responseText);
+          allResultsArray = JSON.parse(xhr.responseText);
+          console.log(allResultsArray);
+          listAllResults();
+          haveAnswered();
+      }
+  };
+  xhr.open("GET", url, true);
+  xhr.send(null);
+}
+function listAllResults() {
+    var tableRowTags = "<tr class='clickableRow' id='rowLectureID'></tr>";
+    var tableCellTags = "<td></td>";
+    var tableCellResultTags = "<td class='resultCell'>%</td>";
+    var tableCellNameTags = "<td class='nameCell'></td>";
+    var tableCellEntriesTags = "<td class='entriesCell'> Svar</td>";
+    var tableCellAnsweredTags = "<td class='answeredCell'>Ej Svarat än</td>";
+    var colourGradient = new Rainbow();
+    colourGradient.setSpectrum('#ffaaaa', '#fffdaa', '#5bff4c');
+
+    $('#resultsTable').empty();
+    _.each(allResultsArray,function(entry){
+      var cellLectureName = tableCellNameTags.insertAt(21, entry.lectureName);
+      var entryTotalInt = Number(entry.total, 10);
+      var entryGoodInt = Number(entry.good, 10);
+      var resultPercent = Math.round((entryGoodInt / entryTotalInt) * 100);
+      var cellEntries = tableCellEntriesTags.insertAt(24, entryTotalInt);
+      var cellResult = tableCellResultTags.insertAt(23, resultPercent);
+      var rowContents = cellLectureName + cellResult + cellEntries + tableCellAnsweredTags;
+      var newRow = tableRowTags.insertAt(43, rowContents);
+      newRow = newRow.insertAt(41, entry.lectureID);
+      $('#resultsTable').append(newRow);
+
+      if (Number.isNaN(resultPercent)) {
+        var hexColour = '#F8F8FF';
+      }
+      else {
+        var hexColour = colourGradient.colourAt(resultPercent);
+      }
+
+      // var rgbaCol = 'rgba(' + parseInt(hexColour.slice(-6,-4),16)
+      // + ',' + parseInt(hexColour.slice(-4,-2),16)
+      // + ',' + parseInt(hexColour.slice(-2),16)
+      // +',0.5)';
+
+      var rowID = "#rowLectureID" + entry.lectureID + " td:first-child";
+      $(rowID).css('background-color', hexColour);
+
+    });
 }

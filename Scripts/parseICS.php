@@ -13,7 +13,11 @@ use ICal\ICal;
 
 // TODO: Make it possible to use webcal(in http-format) link to ics file instead of local file
 // Setup calendar object from .ics file
-$userCalendar = 'KursKurt.ics';
+
+//Get courseID to be able to fetch correct .ics-file from server
+$courseID = $_GET['courseID'];
+$userCalendar = 'KursKurt' . $courseID . '.ics';
+
 try {
     $ical = new ICal($userCalendar, array(
         'defaultSpan'           => 2,     // Default value

@@ -9,7 +9,7 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="http://script.studieradet.se/kurskurt/*" />
+    <allow-navigation href="*" />
     <engine name="ios" spec="~4.3.1" />
     <plugin name="onesignal-cordova-plugin" spec="~2.1.2" />
     <plugin name="callback-plugin" />
