@@ -5,7 +5,6 @@
     <script src="cordova.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>;
 
   </head>
 
@@ -13,27 +12,23 @@
     <!---<iframe src="http://script.studieradet.se/cas/cas2.php"></iframe>--->
     <div>
       <h2>Kurskurt</h2>
-      <form id="fKurtForm" method="post" action="">
+      <form method="post" action="http://script.studieradet.se/kurskurt/database.php">
         <label>Vad tyckte du om föreläsningen "Hjärtat pumpar blod"?</label>
       </br>
-        <input type="radio" id="q1r1" name="q1" value="1" checked>Bra
+        <input type="radio" name="q1" value="1">Bra
       </br>
-        <input type="radio" id="q1r2" name="q1" value="0">Dålig
+        <input type="radio" name="q1" value="0">Dålig
       </br>
-        <input type="text" name="q1comment" id="q1comment" value="banan">
+        <input type="text" name="q1comment" value="test">
       </br>
-        <input type="hidden" name="user" id="user" value="masa7027">
+        <input type="hidden" name="user" value="masa7027">
       </br>
-        <label for="lectureID">Föreläsingsnamn</label>
-        <input type="text" id="lectureName" name="lectureName" value="Föreläsning 3">
+        <input type="hidden" name="kursID" value="1">
       </br>
-        <label for="courseID">KursID</label>
-        <input type="text" id="courseID" name="courseID" value="3">
-      </br>
-        <input type="submit" value="Fungerar ej!">
+        <input type="submit" value="Skicka in!">
       </form>
       </br>
-      <input id="clickMe" type="button" value="Skicka in!" onclick="submitForm();"/>
+      <input id="clickMe" type="button" value="clickme" onclick="clicked();"/>
     </div>
   </body>
 </html>
