@@ -8,24 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		1058C3FBABAC452C83EED212 /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C320418558C49FFB092C48F /* OneSignalPush.m */; };
-		11D811B68519CB313583053A /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D2789C285E6BF8212DBD15 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		2523FFB903A17C4AE741DAB9 /* libPods-KursKurt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FD0566917552966785B8AD /* libPods-KursKurt.a */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		31B5CC841EF1407E00C36B34 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B5CC831EF1407E00C36B34 /* NotificationService.m */; };
-		31B5CC881EF1407E00C36B34 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 31B5CC801EF1407D00C36B34 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		31B5CC8F1EF143F100C36B34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455050D59EDF4557A7DB0794 /* SystemConfiguration.framework */; };
-		31B5CC911EF143F900C36B34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B5CC901EF143F900C36B34 /* UIKit.framework */; };
-		31B5CC951EF1446400C36B34 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B5CC941EF1446400C36B34 /* OneSignal.framework */; };
-		31B5CC971EF146A400C36B34 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B5CC961EF146A400C36B34 /* UserNotifications.framework */; };
-		31B5CCA81EF166E000C36B34 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B5CC961EF146A400C36B34 /* UserNotifications.framework */; };
-		31D1725D1F03E32500276FA3 /* CallbackPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D1725C1F03E32500276FA3 /* CallbackPlugin.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		A69C9293E59B43DE8353302D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455050D59EDF4557A7DB0794 /* SystemConfiguration.framework */; };
-		E641E319259EDD6F1F06FCC1 /* libPods-KursKurt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8ABE28707BD4D024B81494F /* libPods-KursKurt.a */; };
+		DB19CA27EBFA43DAB0385E4A /* OneSignalPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 92846410E6E1432BB5DA5FFD /* OneSignalPush.m */; };
+		E9439745F8724EC5A3C51EA3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC0A335AAD54FC3873E83FC /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,28 +34,7 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
-		31B5CC861EF1407E00C36B34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 31B5CC7F1EF1407D00C36B34;
-			remoteInfo = OneSignalNotificationServiceExtension;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		31B5CC8C1EF1407E00C36B34 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				31B5CC881EF1407E00C36B34 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KursKurt/Images.xcassets; sourceTree = SOURCE_ROOT; };
@@ -80,31 +50,17 @@
 		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
-		31B5CC801EF1407D00C36B34 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		31B5CC821EF1407E00C36B34 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
-		31B5CC831EF1407E00C36B34 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
-		31B5CC851EF1407E00C36B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31B5CC8E1EF1422600C36B34 /* KursKurt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = KursKurt.entitlements; path = KursKurt/KursKurt.entitlements; sourceTree = "<group>"; };
-		31B5CC901EF143F900C36B34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		31B5CC921EF1445800C36B34 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
-		31B5CC941EF1446400C36B34 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
-		31B5CC961EF146A400C36B34 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		31D1725B1F03E32500276FA3 /* CallbackPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackPlugin.h; sourceTree = "<group>"; };
-		31D1725C1F03E32500276FA3 /* CallbackPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallbackPlugin.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* KursKurt-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KursKurt-Prefix.pch"; sourceTree = "<group>"; };
-		338C0B1B54BBD9797984D825 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		455050D59EDF4557A7DB0794 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6458F77F8E844061878962C6 /* OneSignalPush.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = OneSignalPush.h; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = KursKurt/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		6C320418558C49FFB092C48F /* OneSignalPush.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = OneSignalPush.m; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; };
-		74994061CD3B0F79A0833A72 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		81FD0566917552966785B8AD /* libPods-KursKurt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KursKurt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1107310486CEB800E47090 /* KursKurt-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "KursKurt-Info.plist"; path = "KursKurt/KursKurt-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		D7D2789C285E6BF8212DBD15 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8ABE28707BD4D024B81494F /* libPods-KursKurt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KursKurt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92846410E6E1432BB5DA5FFD /* OneSignalPush.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = OneSignalPush.m; path = "onesignal-cordova-plugin/OneSignalPush.m"; sourceTree = "<group>"; };
+		DA62F23577574BBDBC38E51D /* OneSignalPush.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = OneSignalPush.h; path = "onesignal-cordova-plugin/OneSignalPush.h"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = KursKurt/config.xml; sourceTree = "<group>"; };
+		FAC0A335AAD54FC3873E83FC /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,22 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B5CCA81EF166E000C36B34 /* UserNotifications.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				A69C9293E59B43DE8353302D /* SystemConfiguration.framework in Frameworks */,
-				E641E319259EDD6F1F06FCC1 /* libPods-KursKurt.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31B5CC7D1EF1407D00C36B34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31B5CC971EF146A400C36B34 /* UserNotifications.framework in Frameworks */,
-				31B5CC911EF143F900C36B34 /* UIKit.framework in Frameworks */,
-				31B5CC8F1EF143F100C36B34 /* SystemConfiguration.framework in Frameworks */,
-				31B5CC951EF1446400C36B34 /* OneSignal.framework in Frameworks */,
-				11D811B68519CB313583053A /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+				E9439745F8724EC5A3C51EA3 /* SystemConfiguration.framework in Frameworks */,
+				2523FFB903A17C4AE741DAB9 /* libPods-KursKurt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
-				31D1725B1F03E32500276FA3 /* CallbackPlugin.h */,
-				31D1725C1F03E32500276FA3 /* CallbackPlugin.m */,
 				302D95EF14D2391D003F00A1 /* MainViewController.m */,
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
@@ -153,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* KursKurt.app */,
-				31B5CC801EF1407D00C36B34 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +101,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				31B5CC8E1EF1422600C36B34 /* KursKurt.entitlements */,
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
@@ -170,10 +109,9 @@
 				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				31B5CC811EF1407D00C36B34 /* OneSignalNotificationServiceExtension */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				5A783C9D7D32CC64FF710808 /* Pods */,
+				FD33F107DAFC80E0CA934C64 /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -204,13 +142,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				31B5CC961EF146A400C36B34 /* UserNotifications.framework */,
-				31B5CC941EF1446400C36B34 /* OneSignal.framework */,
-				31B5CC921EF1445800C36B34 /* UserNotificationsUI.framework */,
-				31B5CC901EF143F900C36B34 /* UIKit.framework */,
-				455050D59EDF4557A7DB0794 /* SystemConfiguration.framework */,
-				E8ABE28707BD4D024B81494F /* libPods-KursKurt.a */,
-				D7D2789C285E6BF8212DBD15 /* libPods-OneSignalNotificationServiceExtension.a */,
+				FAC0A335AAD54FC3873E83FC /* SystemConfiguration.framework */,
+				81FD0566917552966785B8AD /* libPods-KursKurt.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,31 +169,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				6C320418558C49FFB092C48F /* OneSignalPush.m */,
-				6458F77F8E844061878962C6 /* OneSignalPush.h */,
+				92846410E6E1432BB5DA5FFD /* OneSignalPush.m */,
+				DA62F23577574BBDBC38E51D /* OneSignalPush.h */,
 			);
 			name = Plugins;
 			path = KursKurt/Plugins;
 			sourceTree = SOURCE_ROOT;
-		};
-		31B5CC811EF1407D00C36B34 /* OneSignalNotificationServiceExtension */ = {
-			isa = PBXGroup;
-			children = (
-				31B5CC821EF1407E00C36B34 /* NotificationService.h */,
-				31B5CC831EF1407E00C36B34 /* NotificationService.m */,
-				31B5CC851EF1407E00C36B34 /* Info.plist */,
-			);
-			path = OneSignalNotificationServiceExtension;
-			sourceTree = "<group>";
-		};
-		5A783C9D7D32CC64FF710808 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				338C0B1B54BBD9797984D825 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				74994061CD3B0F79A0833A72 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
 			isa = PBXGroup;
@@ -271,6 +185,13 @@
 			name = Staging;
 			sourceTree = "<group>";
 		};
+		FD33F107DAFC80E0CA934C64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,44 +199,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "KursKurt" */;
 			buildPhases = (
-				74C479B829F82CBCBE69E031 /* [CP] Check Pods Manifest.lock */,
+				E611B068AF530C680F2F296D /* [CP] Check Pods Manifest.lock */,
 				304B58A110DAC018002A0835 /* Copy www directory */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				32F41EDCE6868DEE441B26EC /* [CP] Embed Pods Frameworks */,
-				582678370E1EC4D45872C156 /* [CP] Copy Pods Resources */,
-				31B5CC8C1EF1407E00C36B34 /* Embed App Extensions */,
+				8CFA16AB82EC153C526CCE17 /* [CP] Embed Pods Frameworks */,
+				0A68E227AF5A954E7E7BF27B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
-				31B5CC871EF1407E00C36B34 /* PBXTargetDependency */,
 			);
 			name = KursKurt;
 			productName = KursKurt;
 			productReference = 1D6058910D05DD3D006BFB54 /* KursKurt.app */;
 			productType = "com.apple.product-type.application";
-		};
-		31B5CC7F1EF1407D00C36B34 /* OneSignalNotificationServiceExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 31B5CC8B1EF1407E00C36B34 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
-			buildPhases = (
-				1F01A2136F11ED75E7EF25F2 /* [CP] Check Pods Manifest.lock */,
-				31B5CC7C1EF1407D00C36B34 /* Sources */,
-				31B5CC7D1EF1407D00C36B34 /* Frameworks */,
-				31B5CC7E1EF1407D00C36B34 /* Resources */,
-				E3D03510D42A244DEE5B60D3 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OneSignalNotificationServiceExtension;
-			productName = OneSignalNotificationServiceExtension;
-			productReference = 31B5CC801EF1407D00C36B34 /* OneSignalNotificationServiceExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -327,16 +227,6 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = Q56TE96Y6P;
-						SystemCapabilities = {
-							com.apple.Push = {
-								enabled = 1;
-							};
-						};
-					};
-					31B5CC7F1EF1407D00C36B34 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q56TE96Y6P;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -359,7 +249,6 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* KursKurt */,
-				31B5CC7F1EF1407D00C36B34 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -385,29 +274,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31B5CC7E1EF1407D00C36B34 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F01A2136F11ED75E7EF25F2 /* [CP] Check Pods Manifest.lock */ = {
+		0A68E227AF5A954E7E7BF27B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KursKurt/Pods-KursKurt-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		304B58A110DAC018002A0835 /* Copy www directory */ = {
@@ -425,7 +307,7 @@
 			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
 			showEnvVarsInLog = 0;
 		};
-		32F41EDCE6868DEE441B26EC /* [CP] Embed Pods Frameworks */ = {
+		8CFA16AB82EC153C526CCE17 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,22 +322,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KursKurt/Pods-KursKurt-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		582678370E1EC4D45872C156 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KursKurt/Pods-KursKurt-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		74C479B829F82CBCBE69E031 /* [CP] Check Pods Manifest.lock */ = {
+		E611B068AF530C680F2F296D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,21 +337,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E3D03510D42A244DEE5B60D3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -493,18 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				31D1725D1F03E32500276FA3 /* CallbackPlugin.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				1058C3FBABAC452C83EED212 /* OneSignalPush.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31B5CC7C1EF1407D00C36B34 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31B5CC841EF1407E00C36B34 /* NotificationService.m in Sources */,
+				DB19CA27EBFA43DAB0385E4A /* OneSignalPush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,11 +358,6 @@
 			isa = PBXTargetDependency;
 			name = CordovaLib;
 			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
-		};
-		31B5CC871EF1407E00C36B34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 31B5CC7F1EF1407D00C36B34 /* OneSignalNotificationServiceExtension */;
-			targetProxy = 31B5CC861EF1407E00C36B34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -533,7 +371,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = KursKurt/KursKurt.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = Q56TE96Y6P;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -559,7 +396,6 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_ENTITLEMENTS = KursKurt/KursKurt.entitlements;
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = Q56TE96Y6P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -571,93 +407,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = KursKurt;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		31B5CC891EF1407E00C36B34 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 338C0B1B54BBD9797984D825 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = Q56TE96Y6P;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msr.kurskurt.OneSignalNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		31B5CC8A1EF1407E00C36B34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74994061CD3B0F79A0833A72 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Q56TE96Y6P;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/OneSignal/iOS_SDK/OneSignalSDK/Framework",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.msr.kurskurt.OneSignalNotificationServiceExtension;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -720,15 +469,6 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		31B5CC8B1EF1407E00C36B34 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31B5CC891EF1407E00C36B34 /* Debug */,
-				31B5CC8A1EF1407E00C36B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

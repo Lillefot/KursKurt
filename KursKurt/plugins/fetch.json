@@ -2,7 +2,7 @@
     "onesignal-cordova-plugin": {
         "source": {
             "type": "registry",
-            "id": "onesignal-cordova-plugin@~2.1.2"
+            "id": "onesignal-cordova-plugin"
         },
         "is_top_level": true,
         "variables": {}
