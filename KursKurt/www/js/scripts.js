@@ -25,9 +25,6 @@ function onLoad() {
 }
 
 function onDeviceReady() {
-<<<<<<< HEAD
-  alert('Device Ready!');
-=======
   // alert('Device Ready!');
   goodRadioButton = $('#q1r1');
   badRadioButton = $('#q1r2');
@@ -58,39 +55,23 @@ function onDeviceReady() {
   //Return to settings from iFrame
   toSettings();
   },false);
->>>>>>> 2-Action-Push-notifications
 
   // ***OneSignal Setup***
   // Enable to debug issues.
   // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
-<<<<<<< HEAD
-
-  var notificationOpenedCallback = function(jsonData) {
-    console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
-  };
-
-=======
   //Disable notification prompt until user chose a course
   var iosSettings = {};
   iosSettings["kOSSettingsKeyAutoPrompt"] = false;
->>>>>>> 2-Action-Push-notifications
   window.plugins.OneSignal
     .startInit("88aaa3f2-e759-4311-b1fd-d706b1d18335")
     .iOSSettings(iosSettings)
     .handleNotificationOpened(notificationOpenedCallback)
     .endInit();
 
+
   // Call syncHashedEmail anywhere in your app if you have the user's email.
   // This improves the effectiveness of OneSignal's "best-time" notification scheduling feature.
   // window.plugins.OneSignal.syncHashedEmail(userEmail);
-<<<<<<< HEAD
-  
-}
-
-function clicked(){
-  console.log('Clicked!');
-  alert('Clicked!');
-=======
 
   //Triggers when user selects a course
   $('#courseSelect').change(function(){
@@ -590,5 +571,4 @@ function clearForm(){
   $("input[type='radio']").checkboxradio("refresh");
   $('#submitNewButton').closest('.ui-btn').show();
   $('#submitUpdateButton').closest('.ui-btn').hide();
->>>>>>> 2-Action-Push-notifications
 }

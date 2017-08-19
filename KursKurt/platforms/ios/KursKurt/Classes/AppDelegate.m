@@ -27,17 +27,41 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "UserNotifications/UserNotifications.h"
+#import "OneSignal/OneSignal.h"
+#import "UIKit/UIKit.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     self.viewController = [[MainViewController alloc] init];
+    //Create category for notification with action buttons
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    center.delegate = self;
+    
+    UNMutableNotificationContent *content = [UNMutableNotificationContent new];
+
+    
+    UNNotificationAction *goodAction = [UNNotificationAction actionWithIdentifier:@"Good"
+                                                                              title:@"Bra!" options:UNNotificationActionOptionNone];
+    UNNotificationAction *badAction = [UNNotificationAction actionWithIdentifier:@"Bad"
+                                                                              title:@"Dålig!" options: UNNotificationActionOptionNone];
+    UNNotificationCategory *category = [UNNotificationCategory categoryWithIdentifier:@"KurtLecture"
+                                                                              actions:@[goodAction,badAction] intentIdentifiers:@[]
+                                                                              options:UNNotificationCategoryOptionNone];
+    NSSet *categories = [NSSet setWithObject:category];
+    [center setNotificationCategories:categories];
+    content.categoryIdentifier = @"KurtLecture";
+    
+    NSLog((@"didFinishLaunchingWithOptions"));
+
+    
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
+
 }
 
-<<<<<<< HEAD
-=======
 //Lets the app run JS in the background on notification response
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
     
@@ -78,5 +102,4 @@
 //}
 
 
->>>>>>> 2-Action-Push-notifications
 @end

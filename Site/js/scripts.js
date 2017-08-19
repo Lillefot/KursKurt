@@ -10,8 +10,6 @@ String.prototype.insertAt=function(index, string) {
 
 window.onload = function(){
   console.log('Window loaded');
-<<<<<<< HEAD
-=======
   goodRadioButton = document.getElementById('q1r1');
   badRadioButton = document.getElementById('q1r2');
   goodBadChoice = null;
@@ -89,7 +87,6 @@ function submitForm() {
   else {
     alert('Fyll i om bra eller dålig!');
   }
->>>>>>> 2-Action-Push-notifications
 }
 
 //List results from corresponding course

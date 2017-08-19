@@ -12,4 +12,5 @@
     <allow-navigation href="*" />
     <engine name="ios" spec="~4.3.1" />
     <plugin name="onesignal-cordova-plugin" spec="~2.1.2" />
+    <plugin name="callback-plugin" />
 </widget>

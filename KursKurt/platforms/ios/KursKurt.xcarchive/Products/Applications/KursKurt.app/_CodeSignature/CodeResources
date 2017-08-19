@@ -86,11 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-<<<<<<< HEAD
-		iOkNIPOERLTqSCkdGZJjaBeP+10=
-=======
 		dKj/iRQ7ocdhyZoCEyrJweqf2Ro=
->>>>>>> 2-Action-Push-notifications
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -98,19 +94,11 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-<<<<<<< HEAD
-		fGk/YX3ZYhFpMcgzDVe8DVzf4VY=
-		</data>
-		<key>Info.plist</key>
-		<data>
-		Oxr25s13X2Q3CemtqyaqEhjWZIg=
-=======
 		6hKo1fqVbhZIc63AY7Bmtxqn5ZU=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		Ixk55inbJXIcGH0R0DKDO3wzXa0=
->>>>>>> 2-Action-Push-notifications
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -146,18 +134,12 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-<<<<<<< HEAD
-		OBYGJba/vi4R0LwOlmtwHZFQpt0=
-=======
 		shHWnAdHM3YBufxUd/kkCnMu7ng=
->>>>>>> 2-Action-Push-notifications
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-<<<<<<< HEAD
-=======
 		<key>PlugIns/OneSignalNotificationServiceExtension.appex/Info.plist</key>
 		<data>
 		i+On04fOiGM0ifPT03pg1yqWYZ4=
@@ -178,7 +160,6 @@
 		<data>
 		Swg79il/2gwPmO8L0vM+dqmm1jw=
 		</data>
->>>>>>> 2-Action-Push-notifications
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
 		uVC4UsEAjsaAorNMAW+mHUKgk9o=
@@ -213,19 +194,11 @@
 		</data>
 		<key>www/css/images/icons-png/action-black.png</key>
 		<data>
-<<<<<<< HEAD
-		1Cdpat0X2sXmjGxgkvVbK7BuOa8=
-=======
 		C41jihtlvemq21tA9lW6XAxvXio=
->>>>>>> 2-Action-Push-notifications
 		</data>
 		<key>www/css/images/icons-png/action-white.png</key>
 		<data>
-<<<<<<< HEAD
-		Jh8Qsrk54jndKIrfKmYzes9M69g=
-=======
 		BtPrdsNlJ9mwSLFMVLrdBI25Vhc=
->>>>>>> 2-Action-Push-notifications
 		</data>
 		<key>www/css/images/icons-png/alert-black.png</key>
 		<data>
@@ -3340,19 +3313,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< HEAD
-			iOkNIPOERLTqSCkdGZJjaBeP+10=
-			</data>
-			<key>hash2</key>
-			<data>
-			PJ5marQ4oMKJL+t5Ea+2ELV3kA5/SQXHASXzDeSCckw=
-=======
 			W18fznEzLUkWsPYPKpReJy9LBls=
 			</data>
 			<key>hash2</key>
 			<data>
 			3RYzBWp7v1+D1lWBjS+YtSzl8vOemGmg95O17trnXkg=
->>>>>>> 2-Action-Push-notifications
 			</data>
 		</dict>
 		<key>www/css/images/icons-svg/heart-black.svg</key>
@@ -3370,19 +3335,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< HEAD
-			fGk/YX3ZYhFpMcgzDVe8DVzf4VY=
-			</data>
-			<key>hash2</key>
-			<data>
-			ThENy0minpMhEMYLsUpKeCSx9SvpzX/pckJBWNLggZ8=
-=======
 			pBe5bC04vuy7GkMLvuP9wDqc2iY=
 			</data>
 			<key>hash2</key>
 			<data>
 			XJ84o5M34pFsF/EDTL6odCruw00SsRChVRu85Nczx6A=
->>>>>>> 2-Action-Push-notifications
 			</data>
 		</dict>
 		<key>www/css/images/icons-svg/home-black.svg</key>
@@ -3543,13 +3500,6 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< HEAD
-			OBYGJba/vi4R0LwOlmtwHZFQpt0=
-			</data>
-			<key>hash2</key>
-			<data>
-			dEqMr+r9YEfIChTELxidy8dg7f3MmfwZn8iM5/v6PTI=
-=======
 			U+XbDglXqPQzy7ikZJX4UFbN/zM=
 			</data>
 			<key>hash2</key>
@@ -3610,7 +3560,6 @@
 			<key>hash2</key>
 			<data>
 			YZXRopgEgWbNzVLhSeGfuAd40778oaYsfLUUflX2mGM=
->>>>>>> 2-Action-Push-notifications
 			</data>
 		</dict>
 		<key>www/css/images/icons-svg/recycle-black.svg</key>
@@ -3815,13 +3764,6 @@
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< HEAD
-			1Cdpat0X2sXmjGxgkvVbK7BuOa8=
-			</data>
-			<key>hash2</key>
-			<data>
-			VwYcE0tZoXq8tHtqGTcX3cw5nHNs92VU+30bUB3MTAY=
-=======
 			VoF6YJXJ9t6XZPUA1WF6uUzbVb0=
 			</data>
 			<key>hash2</key>
@@ -3882,20 +3824,12 @@
 			<key>hash2</key>
 			<data>
 			/ORRu6GCCbBwMDfO10XYAsLc83+qn35rix5jnSsAqSM=
->>>>>>> 2-Action-Push-notifications
 			</data>
 		</dict>
 		<key>www/js/scripts.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-<<<<<<< HEAD
-			Jh8Qsrk54jndKIrfKmYzes9M69g=
-			</data>
-			<key>hash2</key>
-			<data>
-			c2sirTXEB7TKTErj4zOPQ4lYk2rFFiuo9FY94zl3Tx0=
-=======
 			XdNhNjVyJF2b8jneBYDevkXr52E=
 			</data>
 			<key>hash2</key>
@@ -3923,7 +3857,6 @@
 			<key>hash2</key>
 			<data>
 			OqJqtaETludkjaNVmkGXAuOfWuHDqb7sJSqS+BXW5HI=
->>>>>>> 2-Action-Push-notifications
 			</data>
 		</dict>
 		<key>www/plugins/onesignal-cordova-plugin/www/OneSignal.js</key>
